@@ -22,5 +22,12 @@ def main():
         print(top_words)
 
 
+def lambda_handler(event, context):
+    """
+    AWS lambda insertion point.
+    """
+    main()
+
+
 if __name__ == '__main__':
     main()
